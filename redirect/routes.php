@@ -24,7 +24,7 @@ class Route {
         ],
         'c'            => [
             'description' => 'TUM Online',
-            'target'      => 'https://campus.tum.de/',
+            'target'      => 'https://campus.tum.de/tumonline/anmeldung.durchfuehren',
         ],
         'm'            => [
             'description' => 'Moodle',
@@ -65,8 +65,7 @@ class Route {
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2',
-            'target'      => 'https://www2.in.tum.de/hp/Main?nid=354',
-            'moodle_id'   => '35319',
+            'target'      => 'http://www2.in.tum.de/hp/Main?nid=380',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
@@ -79,8 +78,8 @@ class Route {
         ],
         'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/grundlagen-betriebssysteme-und-systemsoftware',
-            'moodle_id'   => '35140',
+            'target'      => 'https://www.cm.in.tum.de/teaching/gbs-1819/',
+            'moodle_id'   => '42019',
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
@@ -132,7 +131,7 @@ class Route {
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
-            'target'      => 'https://www.ma.tum.de/Vorkurse/Info/WebHome',
+            'target'      => 'https://vorkurse.ma.tum.de/Vorkurse/Info/WebHome',
         ],
         'csc'          => [
             'description' => 'Computational Social Choice',
@@ -154,13 +153,21 @@ class Route {
             'description' => 'Studienplan M.Sc. Informatik',
             'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html',
         ],
+        'ge-sp'        => [
+            'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik-games-engineering/studienplan-games/studienbeginn-ab-ws-201617-games/',
+        ],
+        'ge-ma-sp'     => [
+            'description' => 'Studienplan M.Sc. Informatik: Games Engineering',
+            'target'      => 'https://www.in.tum.de/de/fuer-studierende/master-studiengaenge/informatik-games-engineering/curriculum/',
+        ],
         'wi-sp'        => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20162017.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20182019/',
         ],
         'wi-ma-sp'     => [
             'description' => 'Studienplan M.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-ss-2014.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-sose-2018/',
         ],
         'app'          => [
             'description' => 'TUM Campus App',
@@ -275,7 +282,7 @@ class Route {
         ],
         'slam'         => [
             'description' => 'TUM Hörsaal Slam',
-            'target'      => 'https://www.facebook.com/events/112801979587860/',
+            'target'      => 'https://www.facebook.com/events/1892789647682641/',
         ],
         'sbrml'        => [
             'description' => 'Sensorbased Robotic Manipulation and Locomotion',
@@ -285,25 +292,29 @@ class Route {
             'description' => 'Robot Programming and Control for Human Interaction',
             'target'      => 'http://www23.in.tum.de/index.php?id=6680'
         ],
-        'wahl'        => [
+        'wahl'         => [
             'description' => 'Hochschulwahlen',
             'target'      => 'https://www.asta.tum.de/wahl/'
         ],
-        'agt'        => [
+        'agt'          => [
             'description' => 'Algorithmic Game Theory',
             'target'      => 'http://dss.in.tum.de/teaching/36-teaching/semester/sommersemster-2018/183-algorithmic-game-theory-ss2018.html'
         ],
-        'io' => [
+        'io'           => [
             'description' => 'Information Officer',
             'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/information-office-io/',
         ],
-        'csd' => [
+        'csd'          => [
             'description' => 'CSD Parade',
             'target'      => 'https://pride.tum.sexy',
         ],
-        'matching'       => [
+        'matching'     => [
             'description' => 'IN.TUM-Matching-System',
             'target'      => 'https://matching.in.tum.de/saml2/login/',
+        ],
+        'esn'          => [
+            'description' => 'ESN TUMi München',
+            'target'      => 'https://portal.mytum.de/veranstaltungen/ic/termine-tumi/index_html',
         ],
     ];
 
@@ -320,7 +331,7 @@ class Route {
         'queer'   => 'diversity',
         'rooms'   => 'room',
         'match'   => 'matching',
-        'la' => 'linalg',
+        'la'      => 'linalg',
     ];
 
     /**
@@ -345,7 +356,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt'
