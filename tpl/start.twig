@@ -5,24 +5,24 @@
            data-count-api="/repos/mammuth/TUM.sexy#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mammuth/TUM.sexy on GitHub">Star</a>
     </div>
 </div>
-<input type="text" id="searchbox" placeholder="Search"/>
+<span id="searchbox-wrapper"><input type="text" id="searchbox" placeholder="Search"/></span>
 <main id="main">
     <div class="row" style="margin-top:10%">
         <div class="twelve column">
-            <div>
+            <div class="section-header">
                 <h3 data-ss-nofilter>Redirects</h3>
                 <p data-ss-nofilter>
-                    No need for remembering long and ugly urls or bookmarks— Just use these redirects!
+                    No need for remembering long and ugly urls or bookmarks &ndash; Just use these redirects!
                 </p>
             </div>
 
             <div class="row">
                     {% for section,elements in routes %}
                         {% if loop.index % 2 == 0 %}
-                            </div><div class="one-half column" data-ss-forceadditional="{{ section }}">
+                            </div><div class="one-half column semester" data-ss-forceadditional="{{ section }}">
                         {% endif %}
                         {% if loop.index % 2 == 1 %}
-                            {% if loop.index != 1 %}</div>{%endif%}<div class="one-half column" data-ss-forceadditional="{{ section }}">
+                            {% if loop.index != 1 %}</div>{%endif%}<div class="one-half column semester" data-ss-forceadditional="{{ section }}">
                         {% endif %}
                         <h4>{{ section }}</h4>
                         {% for route in elements %}
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="row" style="margin-top:10%">
-        <div class="one-half column">
+        <div class="one-half column subsection">
             <h3>About</h3>
             <ul>
                 <li>If you want to <strong>update or add redirects</strong>, take a look at the instructions on the <a href="https://github.com/mammuth/TUM.sexy/tree/master/redirect" target="_blank">Github
@@ -61,7 +61,7 @@
                 </form>
             </div> #}
         </div>
-        <div class="one-half column">
+        <div class="one-half column subsection">
             <h3>Projects / Links</h3>
             <ul>
                 <li><a href="https://cal.bruck.me">Calendar Proxy</a>
@@ -69,10 +69,15 @@
                         <li>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.: replaces 'Tutorübung' with 'TÜ' and Google Now readable locations</li>
                     </ul>
                 </li>
+                <li><a href="https://github.com/lukaskollmer/tum-lecture-download">tum-lecture-download</a>
+                    <ul>
+                        <li>Chrome extension to download lecture recordings from streams.tum.de and lecturio</li>
+                    </ul>
+                </li>
                 <li>FMI Bistro “Speiseplan” — <a href="https://hunger.tum.sexy">hunger.tum.sexy</a></li>
                 <li>MI Raumbelegungen — <a href="https://rooms.tum.sexy">rooms.tum.sexy</a></li>
                 <li>HowTo: Configure eduroam securely - <a href="https://eduroam.tum.sexy">eduroam.tum.sexy</a></li>
-                <li><a href="https://sexipretschi.eu/Game/">Sexi Pretschi Game</a></li>
+                <li><a href="https://tum.sexy/pret">Sexi Pretschi Game</a></li>
                 <li><a href="https://docs.google.com/document/d/1eW6DmvvKoolAWRMp6P3tMts-XWSb263Ap97LyRQ5Wno/edit?usp=sharing">Ersti Tipps</a></li>
             </ul>
         </div>

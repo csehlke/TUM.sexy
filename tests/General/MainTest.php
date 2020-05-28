@@ -12,10 +12,10 @@ class MainTest extends \PHPUnit\Framework\TestCase {
         $this->assertEquals('https://tum.sexy/', $router->getTargetOfSub('kjhdsfjkdfsgkjldsfgkjl.tum.sexy'));
 
         // SiteType redirect to moodle
-        $this->assertContains('https://www.moodle.tum.de/course/view.php?id=36704', $router->getTargetOfSub('m.anal.tum.sexy'));
+        $this->assertStringContainsString('https://www.moodle.tum.de/course/view.php?id=49592', $router->getTargetOfSub('mgbs.tum.sexy'));
 
         // Normal redirect still works, even if it has moodle type assigned
-        $this->assertContains('https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W', $router->getTargetOfSub('anal.tum.sexy'));
+        $this->assertStringContainsString('https://db.in.tum.de/teaching/ws1920/grundlagen/?lang=de', $router->getTargetOfSub('db.tum.sexy'));
     }
 
     public function testJsonOutput() {
